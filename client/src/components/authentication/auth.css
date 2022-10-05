@@ -1,0 +1,121 @@
+.login_form{
+    width:150%;
+}
+.form_title{
+    margin-bottom: 6px;
+}
+.form-group{
+    margin-bottom: 10px;
+}
+.err{
+    color: red;
+}
+.button{
+    position: absolute;
+    bottom: 5%;
+}
+.main_avatar{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.avatar_sex{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    font-size: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.avatar_sex_title{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255);
+    padding: 1.5%;
+    border-radius: 10px;
+    margin-right: 10%;
+}
+
+.list_image{
+  
+    width: 100%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    justify-items: center;
+}
+.avatar_image{
+    width: 70px;
+    height: 70px;
+    background-position: center;
+    background-size: cover;
+    border-radius:50%;
+    margin-bottom: 10%;
+}
+.avatar_image:hover{
+   border:solid yellow;
+}
+.sign_but{
+    padding:0%;
+}
+.submit_but{
+    position: absolute;
+    bottom: 5%;
+    padding: 0;
+}
+.kk{
+    margin-top: 3%;
+}
+.logout{
+    font-size: 150%;
+    margin-left: 10%;
+    width:40px;
+    height:40px;
+    background-color:rgba(255, 0, 0,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:solid;
+    border-radius:5px;
+}
+.pass{
+    position:relative ;
+}
+.hire{
+    position: absolute;
+    right:5%;
+    top:10%;
+    cursor: pointer;
+
+}
+@media screen and (max-width: 768px){
+    .avatar_image{
+        width: 50px;
+        height: 50px;
+    }
+    .logout{
+        width:30px;
+        height:30px;
+        font-size: 120%;
+    }
+}
+@media screen and (max-width: 400px){
+    .avatar_image{
+        width: 35px;
+        height: 35px;
+    }
+    .avatar_sex{
+        font-size: 60%;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    .avatar_sex_title{
+        padding: 2%; 
+    }
+    .logout{
+        width:25px;
+        height:25px;
+        font-size: 100%;
+    }
+}

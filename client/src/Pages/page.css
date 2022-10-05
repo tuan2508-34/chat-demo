@@ -1,0 +1,196 @@
+.show{
+    border-radius: 10px;
+}
+
+
+
+.main_home{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.home_title{
+    margin-top:-5vh;
+    width: 35%;
+    height:70px;
+    background-color:rgba(255, 255, 255,0.8) ;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 200%;
+}
+.home_info{
+    position: relative;
+    margin-top:1%;
+    width: 35%;
+    height:75vh;
+    background-color: rgba(255, 255, 255,0.8);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+}
+.tab{
+    margin-top:20px;
+
+    width:80%;
+    display: flex;
+    justify-content:space-between;
+}
+.home_info_tab{
+    width: 48%;
+}
+.home_info_tab_item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+.home_login{
+    width: 80%;
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 992px){
+    .home_title{   
+        width: 80%;
+    }
+    .home_info{
+        width: 80%;
+    } 
+}
+
+
+
+
+/* chat */
+.main_chat{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.chat_nav{
+    width:100vw;
+    background-color:rgba(37, 118, 153, 0.9) ;
+    height: 50px;
+    border:solid;
+    display: flex;
+    justify-content: center;
+}
+.chat_nav_item{
+    width:96%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.chat_content{
+    margin-top:0.5%;
+    width:98%;
+    height: 91vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.chat_content_left{
+    width:40%;
+    height: 100%;
+    background-color:rgba(37, 118, 153, 0.9);
+    border-radius: 10px;
+}
+.chat_content_right{
+    width:59.3%;
+    height: 100%;
+    background-color:rgba(37, 118, 153, 0.9);
+    border-radius: 10px;
+}
+.item1{
+    display: flex;
+    align-items: center;
+    width: 33%;
+}
+
+.input_user{
+    width:70%;
+    margin-left:2%;
+    background-color:rgb(255, 255, 255,0.9);
+    border-radius: 10px;
+    padding: 1%;
+    padding-left:5%;
+}
+
+.item2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    font-size:200%;
+}
+
+.item3{
+    display: flex;
+    
+    align-items: center;
+    width: 33%;
+}
+.chat_content_right_empty{
+    width:59.3%;
+    height: 100%;
+    border-radius: 10px;
+    background-image: url("https://genk.mediacdn.vn/139269124445442048/2020/12/4/21-1607100215261123880317.gif");
+    background-position: center;
+    background-size: cover;
+}
+.tooltip{
+    background-color: blue !important;
+}
+
+@media screen and (max-width: 768px){
+    .item2{
+        font-size:100%;
+    }
+    ::placeholder { 
+        font-size:80%;
+    }
+    .chat_content_left{
+        width:100%;
+    }
+    .chat_content_right_empty{
+        display:none;
+    }
+    .chat_content_right{
+        display:none;
+    }
+    .show{
+        display:none !important;
+    }
+    .show2{
+        display:flex !important;
+        width:100%;
+    }
+}    
+@media screen and (max-width: 400px){
+    .item2{
+        font-size:80%;
+    }
+    .search{
+        display: none;
+    }
+    .input_user{
+        width: 100%;
+    }
+    ::placeholder { 
+       font-size:70%;
+      }
+}

@@ -1,0 +1,51 @@
+.info{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: flex-end;
+}
+
+.info_ava{
+    width: 40px;
+    height: 40px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    border:solid yellow;
+    margin-right:2%;
+}
+.info_name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px){
+    
+.info_ava{
+    width: 35px;
+    height: 35px;
+}
+.info_name{
+    display: none;
+}
+}
+@media screen and (max-width: 400px){
+    .avatar_image{
+        width: 35px;
+        height: 35px;
+    }
+    .avatar_sex{
+        font-size: 60%;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    .avatar_sex_title{
+        padding: 2%; 
+    }
+    .logout{
+        width:25px;
+        height:25px;
+        font-size: 100%;
+    }
+}
